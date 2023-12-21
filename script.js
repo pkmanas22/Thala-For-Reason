@@ -15,7 +15,7 @@ function missionCompleted(inputString) {
     twitterShare.style.visibility = "visible";
     whatsappShare.style.visibility = "visible";
 
-    sharedText = `I achieved #ThalaForReason with ${inputString} on this cool website! Check it out: ${window.location.href}`;
+    sharedText = `I achieved #ThalaForAReason with ${inputString} on this cool website! Check it out: ${window.location.href}`;
     // console.log(sharedText);
 }
 
@@ -28,13 +28,13 @@ submitBtn.addEventListener("click", () => {
 
     if (text !== "" && number === "") {
         if (text.length < 7) {
-            alert(`Please add another ${7 - text.length} digits to achieve #ThalaForReason`)
+            alert(`Please add another ${7 - text.length} digits to achieve #ThalaForAReason`)
         } else if (text.length == 7) {
             nameSpan.innerText = textInp.value + " = 7 letters";
             missionCompleted(textInp.value + " having 7 letters ");
             textInp.value = "";
         } else {
-            alert(`Please remove ${text.length - 7} digits to achieve #ThalaForReason`)
+            alert(`Please remove ${text.length - 7} digits to achieve #ThalaForAReason`)
         }
     } else if (text === "" && number !== "") {
         const numPlusString = number.split('').join('+')
@@ -69,7 +69,7 @@ downloadIcon.addEventListener("click", () => {
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'ThalaForReason.png';
+            a.download = 'ThalaForAReason.png';
             a.click();
 
             // Restore margin auto after capturing

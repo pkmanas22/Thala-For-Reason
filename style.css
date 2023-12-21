@@ -19,6 +19,7 @@ body {
     height: 90vh;
     margin: 5px auto;
     border: 2px solid black;
+    border-radius: 10px;
     background: url(msdhoni.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,13 +81,13 @@ body {
 
 .container .output h1 {
     text-align: center;
-    font-size: 50px;
+    font-size:45px;
 }
 
 .container .output h1::before {
-    content: "#ThalaForReason";
+    content: "#ThalaForAReason";
     display: block;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     background: linear-gradient(to right,
             #FFFF00,
