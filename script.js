@@ -59,14 +59,27 @@ submitBtn.addEventListener("click", () => {
 })
 
 downloadIcon.addEventListener("click", () => {
-    html2canvas(document.body.getElementsByClassName('container')[0]).then(canvas => {
-        const imageDataUrl = canvas.toDataURL('image/png');
-        const a = document.createElement('a');
-        a.href = imageDataUrl;
-        a.download = 'ThalaForReason.png';
-        a.click();
-    });
+    const container = document.getElementById('container');
+    
+    // Temporarily remove margin auto
+    container.style.margin = '0';
+
+    domtoimage.toBlob(container)
+        .then(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'ThalaForReason.png';
+            a.click();
+
+            // Restore margin auto after capturing
+            container.style.margin = 'auto';
+        });
 });
+
+
+
+
 
 twitterShare.addEventListener('click', () => {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(sharedText)}`;
