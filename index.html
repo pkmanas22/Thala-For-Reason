@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thala For Reason</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3d5eef6133.js" crossorigin="anonymous"></script>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="visible-container">
+            <div class="input">
+                <input type="text" class="text" placeholder="Your text goes here..." name="text" id="text">
+
+                <span><b>(or)</b></span>
+                
+                <input type="number" class="number" placeholder="Your number goes here..." name="number" id="number">
+            </div>
+            <div class="submit">
+                <button type="submit" id="submitBtn" style="border: none; background: none;">
+                    <i class="fa-solid fa-circle-arrow-right" style="font-size: 50px;"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="output" id="output" style="visibility:hidden;">
+            <h1><span id="name"></span><br>
+            </h1>
+        </div>
+
+        <div class="share">
+            <i class="fa-solid fa-cloud-arrow-down" id="downloadIcon"></i>
+            <i class="fa-brands fa-square-x-twitter" id="twitterShare"></i>
+            <i class="fa-brands fa-square-whatsapp" id="whatsappShare"></i>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
