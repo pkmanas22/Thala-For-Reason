@@ -10,13 +10,12 @@
 
 body {
     width: 100vw;
-    height: 100vh;
     min-width: 320px;
 }
 
 .container {
     width: 95vmin;
-    height: 90vh;
+    height: 85vh;
     margin: 5px auto;
     border: 2px solid black;
     border-radius: 10px;
@@ -123,15 +122,15 @@ body {
 }
 
 .container .share {
-    height: 10%;
+    /* height: 10%; */
     text-align: center;
-    visibility: hidden;
 }
 
 .container .share i {
     font-size: 40px;
     margin-right: 15px;
     cursor: pointer;
+    visibility: hidden;
 }
 
 .container .share #downloadIcon {
@@ -162,7 +161,7 @@ body {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .container .visible-container {
         flex-direction: column;
     }
@@ -185,6 +184,7 @@ body {
 }
 
 footer p a{
+    z-index: 100;
     font-size: 15px;
     color: #222020;
 }
