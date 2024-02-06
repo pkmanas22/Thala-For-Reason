@@ -51,7 +51,7 @@ submitBtn.addEventListener("click", () => {
             missionCompleted(numPlusString + " = 7");
             numberInp.value = "";
         } else {
-            alert("Oops...")
+            alert("Oops!!! Sum is not 7. Try another one...")
         }
     } else {
         alert("Please fill only one field.");
